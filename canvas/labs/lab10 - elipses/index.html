@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Canvas: Lab10 - Elipse</title>
+</head>
+
+<body>
+    <canvas width="800" height="600" style="border: 1px black solid;"></canvas>
+    <script>
+        
+        const canvas = document.querySelector("canvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.ellipse(200, 150, 100, 50, 0, 0, Math.PI * 2); // (x, y, raioX, raioY, rotação, início, fim)
+        ctx.stroke();
+
+
+    </script>
+</body>
+
+</html>

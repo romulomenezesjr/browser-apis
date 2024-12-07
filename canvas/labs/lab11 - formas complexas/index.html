@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Canvas: Lab11 - Formas Complexas</title>
+</head>
+
+<body>
+    <canvas width="800" height="600" style="border: 1px black solid;"></canvas>
+    <script>
+        
+        const canvas = document.querySelector("canvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.moveTo(150, 200);
+        ctx.bezierCurveTo(100, 100, 50, 200, 150, 300); // Lado esquerdo
+        ctx.bezierCurveTo(250, 200, 200, 100, 150, 200); // Lado direito
+        ctx.fillStyle = 'red';
+        ctx.fill();
+        ctx.stroke();;
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Canvas: Lab8 - Coordenadas do canvas</title>
+</head>
+
+<body>
+    <canvas width="800" height="600" style="border: 1px black solid;"></canvas>
+    <script>
+        
+        const canvas = document.querySelector("canvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        
+        ctx.lineTo(500, 500); 
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(0, 0); 
+        for (let i = 0; i < 800; i += 10){
+            ctx.lineTo(i, 600)
+            ctx.moveTo(i+10, 0); 
+        }
+        for (let i = 0; i < 600; i += 10){
+            ctx.lineTo(800, i)
+            ctx.moveTo(0, i+10); 
+        }
+        ctx.stroke();
+
+
+    </script>
+</body>
+
+</html>

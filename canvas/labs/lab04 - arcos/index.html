@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Canvas: Lab2 - Contexto</title>
+</head>
+
+<body>
+    <canvas width="800" height="600" style="border: 1px black solid;"></canvas>
+    <script>
+        const canvas = document.querySelector("canvas");
+        const ctx = canvas.getContext("2d");
+
+        
+        ctx.beginPath();
+        ctx.arc(100, 100, 50, 0, Math.PI * 2); // (x, y, raio, início, fim)
+        ctx.fillStyle = 'blue'; // Cor de preenchimento
+        ctx.fill();
+        
+        // Círculo com contorno
+        ctx.beginPath();
+        ctx.arc(300, 100, 50, 0, Math.PI );
+        ctx.strokeStyle = 'red'; // Cor do contorno
+        ctx.lineWidth = 3; // Espessura da linha
+        ctx.stroke();
+    </script>
+</body>
+
+</html>

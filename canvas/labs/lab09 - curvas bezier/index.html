@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Canvas: Lab09 - Curvas de Bezier </title>
+</head>
+
+<body>
+    <canvas width="800" height="600" style="border: 1px black solid;"></canvas>
+    <script>
+        
+        const canvas = document.querySelector("canvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.moveTo(50, 200); // Ponto inicial
+        ctx.bezierCurveTo(150, 100, 250, 300, 350, 200); // 2 pontos de controle e o final
+        ctx.stroke();
+
+
+    </script>
+</body>
+
+</html>

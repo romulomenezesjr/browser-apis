@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Canvas: Lab2 - Contexto</title>
+</head>
+
+<body>
+    <canvas width="800" height="600" style="border: 1px black solid;"></canvas>
+    <script>
+        
+        const canvas = document.querySelector("canvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.moveTo(100, 100); // Ponto 1
+        ctx.lineTo(150, 200); // Ponto 2
+        ctx.lineTo(50, 200);  // Ponto 3
+        ctx.closePath(); // Fecha o caminho
+        ctx.fillStyle = 'green';
+        ctx.fill(); // Preenche o triângulo
+        ctx.stroke();  
+
+
+    </script>
+</body>
+
+</html>
