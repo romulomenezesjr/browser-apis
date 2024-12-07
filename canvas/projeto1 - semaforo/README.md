@@ -1,9 +1,9 @@
-### **Tutorial 1: Criando um Semáforo com Círculos no Canvas**
+### Projeto 1: Criando um Semáforo com Círculos no Canvas
 
 #### Objetivo
 Neste tutorial, vamos aprender a criar um semáforo utilizando a tag `<canvas>` no HTML e JavaScript. Ele terá três luzes (vermelha, amarela e verde) desenhadas com círculos. Além disso, vamos adicionar uma interação onde as luzes se alternam automaticamente a cada 2 segundos.
 
----
+![](../../img/semaforo.png)
 
 ### Passo 1: Configuração Inicial
 

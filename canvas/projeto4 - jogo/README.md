@@ -1,4 +1,4 @@
-## Tutorial: Criando uma Animação Interativa com Bolas em Movimento usando JavaScript
+## Projeto 4: Criando uma Animação Interativa com Bolas em Movimento usando JavaScript
 
 Neste tutorial, vamos desenvolver um projeto de animação no navegador onde diversas bolas coloridas se movem e colidem, mudando de cor. Além disso, teremos uma bola controlável que você pode mover usando as setas do teclado.
 
